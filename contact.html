@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradigm Pet Professionals</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -29,36 +30,35 @@
 
     <main>
         <div class="contact">
-            <h1>Schedule an Appointment</h1>
-            <form action="">
+            <h1>Get connected with one of our team members!</h1>
+            <form action="#">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="phone">Phone:</label>
+                
+                <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone">
-                <label for="pet">Pet:</label>
-                <select name="pet" id="pet">
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="bird">Bird</option>
-                </select>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="timezone">Time Zone:</label>
+                <input type="text" id="timezone" name="timezone">
+                
+                <label for="pet-name">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name">
+                
+                <label for="pet-type">Pet's Type:</label>
+                <input type="text" id="pet-type" name="pet-type">
+                
+                <label for="pet-age">Pet's Age:</label>
+                <input type="number" id="pet-age" name="pet-age">
+                
                 <button type="submit">Submit</button>
             </form>
         </div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <h3>Paradigm Pet Professionals</h3>
-            <p>1234 Goober Lane</p>
-            <p>Gooberville, Goober</p>
-            <p>Phone: 888-888-8888</p>
-        </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="dogs.html">Dogs</a>

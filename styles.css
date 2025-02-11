@@ -41,6 +41,10 @@ header{
     margin: .5em; */
     height: 60%
 }
+.active {
+    background-color: var(--blue-sky);
+    color: white;
+}
 .searchbar{
     display: flex;
     justify-content: flex-end;
@@ -77,6 +81,32 @@ a {
 a:hover {
     color: var(--blue-sky);
 }
+.resources {
+    align-items: center;
+    margin-left: 1em;
+}
+.resources li {
+    padding: .25em;
+    margin-bottom: .25em;
+}
+.resources a{
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-size: large;
+    transition: all .3s ease-in-out;
+}
+.resources a:hover {
+    color: var(--blue-sky);
+}
+
+.content ul{
+    align-items: center;
+    margin-left: 1em;
+}
+.content ul li {
+    padding: .25em;
+    margin-bottom: .25em;
+}
 .contactbtn {
     background-color: var(--midnight-blue);
     color: white;
@@ -93,13 +123,14 @@ footer {
     background-color: var(--dim-gray);
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 5.25em;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding-left: .5em;
+    margin: auto;
 }
 .footer-links{
     display: flex;
@@ -123,21 +154,31 @@ main {
     width: 80%;
     display: flex;
     justify-content: center;
-    padding-bottom: 5em;
+    padding-bottom: 6em;
     padding-top: 2em;
     margin: auto;
     color: var(--midnight-blue);
 }
-.intro {
+.intro, .content {
     width: 60%;
     padding-right: 2em;
 }
+
 h1 {
     font-size: x-large;
     margin-bottom: .5em;  
+    padding-bottom: .25em;
+    border-bottom: solid var(--midnight-blue) .2em;
 }
-.intro p {
+h2 {
+    font-size: large;
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    border-bottom: solid var(--blue-sky) .15em;
+}
+.intro p, .content p {
     line-height: 2em;
+    padding-bottom: .75em;
 }
 .images {
     width: 40%;
@@ -150,4 +191,31 @@ h1 {
     width: 100%;
     height: auto;
     padding: .5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+form input {
+    width: 80%;
+    padding: .5em;
+    margin-bottom: .5em;
+    border-radius: 1em;
+    border: 2px solid var(--blue-sky);
+    color: var(--dim-gray);
+}
+button {
+    padding: .5em 1em;
+    border-radius: 1em;
+    border: 1px solid var(--midnight-blue);
+    background-color: white;
+    color: var(--midnight-blue);
+    transition: all .2s ease-in-out;
+}
+button:hover {
+    background-color: var(--blue-sky);
+    color: white;
 }
