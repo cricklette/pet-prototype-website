@@ -32,6 +32,10 @@ header{
     justify-content: left;
     align-items: center;
 }
+.logo {
+    width: 10%;
+    height: auto;
+}
 .logos img {
     height: 100%;
 }
@@ -129,11 +133,13 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 5.25em;
+    height: 2.5em;
     bottom: 0;
     width: 100%;
     padding-left: .5em;
+    border-top: solid var(--midnight-blue);
     margin: auto;
+    position: fixed;
 }
 .footer-links{
     display: flex;
@@ -162,7 +168,7 @@ main {
     margin: auto;
     color: var(--midnight-blue);
     flex: 1;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
 }
 .intro, .content {
     width: 60%;
@@ -203,6 +209,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
 }
 form input {
     width: 80%;
