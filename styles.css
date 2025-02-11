@@ -162,6 +162,7 @@ main {
     margin: auto;
     color: var(--midnight-blue);
     flex: 1;
+    padding-bottom: 3em;
 }
 .intro, .content {
     width: 60%;
