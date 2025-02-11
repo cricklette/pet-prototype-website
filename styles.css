@@ -15,12 +15,16 @@
 }
 header{
     height: 8em;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     background-color: white;
     color: var(--midnight-blue);
     border-bottom: var(--midnight-blue) .5em solid;
     padding: .5em;
+    position: fixed;
+    width: 100%;
 }
 .logos{
     height: 100%;
@@ -126,7 +130,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 5.25em;
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding-left: .5em;
@@ -151,13 +154,14 @@ footer {
 }
 
 main {
+
     width: 80%;
     display: flex;
     justify-content: center;
-    padding-bottom: 6em;
-    padding-top: 2em;
+    padding-top: 9em;
     margin: auto;
     color: var(--midnight-blue);
+    flex: 1;
 }
 .intro, .content {
     width: 60%;
