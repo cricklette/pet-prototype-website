@@ -85,6 +85,7 @@ header {
     color: white;
 }
 
+
 a {
     color: var(--midnight-blue);
     text-decoration: none;
@@ -207,6 +208,15 @@ h2 {
 .intro p, .content p {
     line-height: 2em;
     padding-bottom: .75em;
+}
+p a{
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-size: inherit;
+    transition: all .3s ease-in-out;
+    border-bottom: midnightblue 1px solid;
+    padding: none;
+    margin: 0;
 }
 
 .images {
