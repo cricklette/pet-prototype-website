@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(currentPage);
     let links = document.querySelectorAll('.nav-link');
     links.forEach(link => {
-        console.log(link.textContent.toLowerCase());
         if (link.textContent.toLowerCase() == currentPage) {
             link.classList.add('selected');
             console.log(`added selected to ${link.textContent}`);
@@ -47,9 +46,24 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.remove('selected');
         }
     });
-    
+
+    let footerLinks = document.querySelectorAll('.footer-links a');
+    footerLinks.forEach(link => {
+        if (link.textContent.toLowerCase() == currentPage) {
+            link.classList.add('selected');
+        }
+        else if(link.textContent.toLowerCase() == 'home' && currentPage == 'index') {
+            link.classList.add('selected');
+        }
+        else {
+            link.classList.remove('selected');
+        }
+    });
+
 
 });
+
+
 
 
 // add "selected" class to the link of the current page

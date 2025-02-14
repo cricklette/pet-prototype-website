@@ -96,6 +96,8 @@ a {
 
 a:hover {
     color: var(--blue-sky);
+}
+.nav-link:hover{
     border-bottom: .2em solid var(--blue-sky);
 }
 
@@ -143,6 +145,13 @@ a:hover {
     background-color: var(--blue-sky);
 }
 
+#current {
+    color: white;
+    background-color: var(--blue-sky);
+}
+
+
+
 footer {
     background-color: var(--dim-gray);
     color: white;
@@ -169,11 +178,12 @@ footer {
     text-decoration: none;
     margin: 0 1em;
     font-size: larger;
-    transition: all .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .footer-links a:hover {
     color: var(--silver);
+    transition: none;
 }
 
 main {
@@ -241,6 +251,10 @@ form {
     align-items: center;
     width: 100%;
 }
+form label {
+    align-self: flex-start;
+    margin-left: 12%;
+}
 
 form input {
     width: 80%;
@@ -268,4 +282,13 @@ button:hover {
 .selected {
     border-bottom: midnightblue .2em solid;
     transition: none;
+}
+
+textarea{
+    width: 80%;
+    padding: .5em;
+    margin-bottom: .5em;
+    border-radius: 1em;
+    border: 2px solid var(--blue-sky);
+    color: var(--dim-gray);
 }
