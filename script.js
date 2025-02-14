@@ -28,4 +28,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         searchInput.value = ''; 
     });
+
+
+    
+    let currentPage = window.location.pathname.split('/').pop().split('.')[0];
+    console.log(currentPage);
+    let links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        console.log(link.textContent.toLowerCase());
+        if (link.textContent.toLowerCase() == currentPage) {
+            link.classList.add('selected');
+            console.log(`added selected to ${link.textContent}`);
+        }
+        else if(link.textContent.toLowerCase() == 'home' && currentPage == 'index') {
+            link.classList.add('selected');
+        }
+        else {
+            link.classList.remove('selected');
+        }
+    });
+    
+
 });
+
+
+// add "selected" class to the link of the current page
+
+

@@ -91,11 +91,12 @@ a {
     text-decoration: none;
     margin: 0 1em;
     font-size: larger;
-    transition: all .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 a:hover {
     color: var(--blue-sky);
+    border-bottom: .2em solid var(--blue-sky);
 }
 
 .resources {
@@ -262,4 +263,9 @@ button {
 button:hover {
     background-color: var(--blue-sky);
     color: white;
+}
+
+.selected {
+    border-bottom: midnightblue .2em solid;
+    transition: none;
 }
